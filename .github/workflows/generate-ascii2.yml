@@ -28,7 +28,7 @@ jobs:
         - name: Download Dragon Text File
           uses: actions/download-artifact@v8
           with:
-            name: dragon-text.txt
+            name: dragon-text-file
             path: dragon.txt
 
         - name: Sleep for 10 seconds
@@ -47,7 +47,7 @@ jobs:
           with:
             name: dragon-text-file
             path: dragon.txt
-            
+
         - name: Read File
           run: cat dragon.txt
         
